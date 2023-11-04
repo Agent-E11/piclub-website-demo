@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS (includes Bootstrap) -->
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>BTC Pi Club Website</title>
 </head>
 <body>
+    <!-- Navbar (collapses when the screen is a "medium" size or smaller) -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-        <a href="/" class="navbar-brand">
-            <img class="m-0" src="/images/btc-pi-logo-512.png" alt="Raspberry Pi Club Logo" width="40" height="40">
-            Raspberry Pi Club
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Posts</a>
-                </li>
-            </ul>
+        <div class="container-fluid">
+            <!-- Brand (image and title) -->
+            <a href="/" class="navbar-brand">
+                <img class="m-0" src="/images/btc-pi-logo-512.png" alt="Raspberry Pi Club Logo" class="d-inline-block align-text-top" width="45" height="45">
+                Raspberry Pi Club
+            </a>
+            <!-- Navbar toggler icon () -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a> <!-- Current page -->
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Projects</a>
+                    <a href="#" class="nav-link">Posts</a>
+                </div>
+            </div>
         </div>
     </nav>
+
+    <!-- Content -->
     <div class="container mt-3 p-2 bg-secondary">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -41,5 +44,11 @@
             soluta in error porro assumenda voluptas!
         </p>
     </div>
+
+    <!-- Bootstrap Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
