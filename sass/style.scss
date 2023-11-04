@@ -4,3 +4,7 @@ $theme-colors: (
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.fill-viewport-height {
+    min-height: 100vh;
+}
