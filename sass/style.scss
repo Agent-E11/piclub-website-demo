@@ -1,10 +1,38 @@
+// Default bootstrap colors (do not change)
+// $theme-colors: (
+//     "primary": #0d6efd,
+//     "secondary": #6c757d,
+//     "success": #198754,
+//     "info": #0dcaf0,
+//     "warning": #ffc107,
+//     "danger": #dc3545,
+//     "light": #f8f9fa,
+//     "dark": #212529,
+// );
+
+// To use a theme, uncomment the variable (and comment out the previous theme)
+// You can also create your own theme by defining the `$theme-colors` variable _before_ the Bootstrap import line
+// The last (lowest) theme will overwrite previous themes if more than one is left uncommented
+
+// Pi Club Theme 1
 $theme-colors: (
     "primary": rgb(195, 23, 75),
-    "secondary": rgb(240,240,240)
+    "secondary": rgb(240,240,240),
 );
 
+// Example theme
+// $theme-colors: (
+//     "primary": rgb(128, 128, 128),
+//     "secondary": rgb(14, 209, 209),
+// );
+
+// Do not edit this line
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Define your own styles _after_ the Bootstrap import line
+
+// Make sure the content will be at least as high as the viewport\
+// If you take this away, the footer will not always be at the bottom of the screen
 .fill-viewport-height {
     min-height: 100vh;
 }

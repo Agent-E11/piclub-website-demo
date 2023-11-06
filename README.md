@@ -39,3 +39,9 @@ code .
 Ctrl+Shift+P
 Live Server: Open with live server
 ```
+
+You now have the website open in a web browser, and any changes you make will immediately be reflected in the website
+
+## Colors
+
+To change the colors of the website, edit the `sass/style.scss` file
